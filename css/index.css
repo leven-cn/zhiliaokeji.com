@@ -1,0 +1,351 @@
+main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top:0;
+}
+
+main img{
+  width: 100%;
+}
+
+main article{
+  position: absolute;
+  top:16rem;
+  width: 100%;
+  font-size: 2.8rem;
+  text-align: center;
+  box-sizing: border-box;
+  color:#fff;
+}
+main article h2{
+  background: rgba(36, 33, 45, 0.7);
+  font-size: 3.2rem;
+  padding: 2.2rem 0;
+  animation: show linear 1s;
+  /* animation-delay: 2s; */
+}
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+main article section{
+  display: inline-block;
+  box-shadow: 0 0 8px 0.12rem #f1f1f1;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #fff;
+  display: none;
+}
+
+main article section:hover{
+  transition: all 1s;
+  background:rgb(67, 201, 233);
+}
+
+main section:nth-child(3){
+  position: absolute;
+  width: 100%;
+  bottom: 25%;
+  text-align: center;
+}
+
+main section:nth-child(3) a{
+  width: 10%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border: 0.08rem solid #ccc;
+  border-radius: 0.1rem;
+  background:rgba(255, 255, 255, 0);
+  color:rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin: 0 2.7rem;
+  display: inline-block;
+  box-shadow: 0 0 8px 0.01rem #f1f1f1;
+}
+
+main section:nth-child(3) a:hover{
+  transition: all 1s;
+  background:rgb(66, 208, 243);
+  font-size: 1.4rem;
+}
+
+main ul{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  overflow: hidden;
+  background: #666;
+  z-index: 3;
+  left:0;
+  /* top:0; */
+}
+
+
+main ul li{
+  float:left;
+  width: 8%;
+  height: 100%;
+  text-align: left;
+  background:#000;
+  transition: all 1s;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #fff;
+}
+main ul li:nth-child(3){width:68%;}
+
+main ul li section{height: 100%; width: 250%; padding:1rem 0 0 1rem;}
+main ul li:nth-child(1) section{background:rgb(85, 71, 142)}
+main ul li:nth-child(2) section{background:rgb(143, 195, 214)}
+main ul li:nth-child(3) section{background:rgb(240, 190, 74)}
+main ul li:nth-child(4) section{background:rgb(165, 191, 75)}
+main ul li:nth-child(5) section{background:rgb(255, 111, 67)}
+
+main ul:hover li{width:8%;}
+main ul li:hover{width:68%;}
+
+
+main ul li section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main ul li section p{
+  position: static;
+  margin: 1rem 0 0 2.5rem;
+  color: rgb(255, 255, 255,0.7);
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+
+main ul li svg{
+  fill:rgba(255, 255, 255,0.5);
+  width: 15rem;
+  height: 15rem;
+  line-height: 100%;
+}
+
+main ul li:nth-child(3) section{
+  display: block;
+}
+
+main ul li:nth-child(3) section section{
+  padding: 0;
+}
+
+main ul li:nth-child(3) section section:nth-child(1){
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+}
+
+#xz{
+  width: 17rem;
+  height: 17rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+  fill:rgba(255,255,255,0.7);
+  transition: all 1s;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+    fill:rgba(255,255,255,0.7);
+  }
+  100%{
+    transform: rotate(360deg);
+    fill:rgba(255,255,255,1);
+  }
+}
+
+
+main ul li:nth-child(3) section section:nth-child(2){
+  float: left;
+  width: 22.2rem;
+  height: 41rem;
+  position: relative;
+  top:50%;
+  margin-top: -21.5rem;
+  margin-left: 4rem;
+  overflow: hidden;
+}
+
+main ul li:nth-child(3) section section:nth-child(2) svg:nth-child(1){
+  width: 41rem;
+  height: 41rem;
+  display: inline-block;
+  fill: rgba(229,229,229,1);
+}
+
+main ul li:nth-child(3) section section:nth-child(2) button{
+  position: absolute;
+  float: left;
+  z-index: 1;
+  top:50%;
+  left: 50%;
+  margin: -2rem 0 0 -6rem;
+  width: 12rem;
+  height: 4rem;
+  border:none;
+  border-radius: 0.4rem;
+  background: rgb(255, 111, 67);
+  box-shadow: 0 8px 9px rgb(20, 20, 20);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size:1.7rem;
+  font-weight: bold;
+}
+
+main ul li:nth-child(3) section section:nth-child(2) button:hover{
+  background: rgb(152, 175, 66);
+  box-shadow:3px 3px 4px rgb(165, 191, 75) inset;
+}
+
+#icon{
+  width: 16.54rem;
+  height: 30.58rem;
+  position: absolute;
+  top:3.5rem;
+  left: 0;
+  margin: 1rem 0 0 2.8rem;
+  background: rgb(34, 34, 34);
+}
+
+#icon ol{
+  display: inline-block;
+} 
+
+#icon ol li{
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color:#fff;
+  float: left;
+  margin:1.1rem 0 0 1.1rem;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: all 1s;
+  /* cursor: ; */
+}
+
+#icon ol li:nth-child(1){
+  background: rgb(210,82,41);
+}
+#icon ol li:nth-child(2){
+  background: rgb(67,160,231);
+}
+#icon ol li:nth-child(3){
+  background: rgb(244,173,61);
+}
+#icon ol li:nth-child(4){
+  background: rgb(142,186,57);
+  font-size: 0.9rem;
+}
+#icon ol li:nth-child(5){
+  background: rgb(42,105,186);
+  font-size: 0.9rem;
+}
+
+
+#icon ol li:nth-child(6){
+  background: rgb(66,105,145);
+  font-size: 0.9rem;
+}
+#icon ol li:nth-child(7){
+  background: rgb(21,45,33);
+  font-size: 0.9rem;
+}
+#icon ol li:nth-child(8){
+  background: rgb(233,52,40);
+}
+#icon ol li:nth-child(9){
+  background: rgb(106,121,176);
+}
+#icon ol li:last-child{
+  border:0.05rem solid #eee;
+  background: none;
+}
+
+#icon svg{
+  height: 2rem;
+  position: absolute;
+  top:-1.2rem;
+  left: 1rem;
+  z-index: 3;
+  fill: rgb(255, 255, 255);
+}
+
+@keyframes scanning{
+  0%{
+    top:-1.2rem;
+  }
+  100%{
+    top:29.4rem;
+  }
+}
+
+@keyframes liList{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+main li:nth-child(3) h2{
+  font-size: 4rem;
+  color:rgb(255, 255, 255);
+  margin-left: 1.2rem;
+}
+
+main li:hover p{
+  margin: 1rem 0 0 4.5rem;
+}
+
+#icon p{
+  color:rgba(255,255,255,1);
+  margin: 1.3rem 0 1rem 1.3rem;
+  font-size: 2rem;
+  border-right:.1em solid;
+	width:16.5em;
+	white-space:nowrap;
+  overflow:hidden;
+  opacity: 0;
+}
+
+#icon p em{
+  font-style: normal;
+}
+
+@keyframes typing {
+	from {
+    width:0;
+    opacity: 1;
+  }
+}
+
+@keyframes typingEm {
+	0% {
+    color: rgb(255, 111, 67);
+    font-size: 12rem;
+  }
+  100%{
+    color: rgb(255, 111, 67);
+    font-size: 2rem;
+  }
+}
