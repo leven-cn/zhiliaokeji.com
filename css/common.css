@@ -1,0 +1,168 @@
+ul,li{list-style: none;}
+a{text-decoration: none;}
+body,h1,h2,h3,button,ul,ol,li,img,a,main,section,article,header,menu,footer,aside,nav,p,svg{
+  margin: 0;
+  padding: 0;
+}
+
+button,input{
+  outline:none;
+}
+
+body{
+  font-size: 1.5rem;
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+header{position:fixed;width: 100%;z-index: 4;top:0;}
+
+header a:nth-child(2){
+  position: relative;
+  background:#fff;
+  border-radius: 0 0 0.8rem 0.8rem;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  margin-left:2rem;
+  box-shadow: 2px 1px 8px 1px #f1f1f1;
+  top:0;
+}
+
+header img{
+  width: 2rem;
+}
+
+aside{
+  width: 1.8rem; 
+  height:0.6rem; 
+  cursor: pointer; 
+  float:right;
+  padding: 0.53rem 0 0 0;
+  position: fixed;
+  top:1.7rem;
+  right: 2.5rem;
+  z-index: 5;
+}
+
+aside button,
+aside button:before,
+aside button:after {
+  height: 0.08rem;
+  width: 1.8rem;
+  background:#fff;
+  position: absolute;
+  content: '';
+}
+
+aside button{
+  border: none;
+}
+
+aside button:before {
+  top: -0.5rem;
+  right: 0;
+}
+
+aside button:after {
+  bottom: -0.5rem; 
+  right: 0;
+}
+
+aside nav{
+  display: none;
+}
+
+nav ul{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.5rem 0;
+  background:rgba(0, 0, 0, 0.8);
+}
+nav ul li{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+nav ul li a{
+  color: #fff;
+}
+
+nav ul li:nth-child(1):hover{background:rgb(177, 95, 95);}
+nav ul li:nth-child(2):hover{background:rgb(250, 71, 81);}
+nav ul li:nth-child(3):hover{background:rgb(21, 102, 247);}
+nav ul li:nth-child(4):hover{background:rgb(67, 201, 233);}
+nav ul li:nth-child(5):hover{background:rgb(240, 201, 44);}
+nav ul li:nth-child(6):hover{background:rgb(255, 111, 67);}
+
+aside:hover nav{display: block;}
+
+
+footer{
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 2rem;
+  z-index:3;
+  color: #fff;
+}
+
+footer section{
+  width:1.86rem;
+  height:1.86rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition:all 1s;
+  font-size: 1rem;
+}
+#phone{
+  fill:#fff;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+#wechat{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  fill: #fff;
+  width: 2.53rem;
+  height: 2.53rem;
+}
+
+#qrcode{
+  position: absolute; 
+  bottom:4.6rem; 
+  right: -1rem; 
+  background: #fff;
+  width:0; 
+  border: 0.05rem solid #ccc;
+  border-radius: 0.2rem;
+  transition:all 1s;
+}
+footer section p{position: absolute;bottom:2.8rem;right: -1rem;width: 11.5rem;opacity: 0;}
+
+
+
+
+
+
+
+
+
+
+
