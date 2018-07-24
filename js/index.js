@@ -16,6 +16,15 @@ exp.onclick = function(){
       speed = 0;
       clearInterval(times);
     }
+    setTimeout(function(){
+      typing[0].style.animation = "typing 3s steps(30,end)";
+      typing[0].style.opacity= "1";
+    },1000)
+    
+    setTimeout(function(){
+      typingEm.style.animation = "typingEm 3s";
+      typingEm.style.animationFillMode= "forwards";
+    },2500)
   },8)
 }
 
@@ -25,7 +34,7 @@ var figure = document.getElementById("figure");
 var icon = document.getElementById("icon");
 var OlList = icon.getElementsByTagName("ol")[0];
 var liList = OlList.getElementsByTagName("li");
-var scanning = icon.getElementsByTagName("svg");
+var scanSvg = icon.getElementsByTagName("svg");
 var wechat = document.getElementById("wechat");
 var qrcode = document.getElementById("qrcode");
 var Tag = document.getElementById("tag");
@@ -34,17 +43,16 @@ var Tag = document.getElementById("tag");
 // 收集情报
 btn.onclick = function(){
   this.style.display = "none";
-  myFunction();
+  iconRotate();
   setTimeout(function(){
     qrcode.style.width = "12rem";
     qrcode.style.transition = "all 1s";
     Tag.style.opacity = "1";
-    myEndFunction();
-    mySvg();
+    scanning();
   },1000)
   setTimeout(function(){
-    mySvg();
-  },1500)
+    iconShow();
+  },1200)
 }
 
 wechat.onmousemove = function(){
@@ -60,78 +68,46 @@ wechat.onmouseout = function(){
 }
 
 // 图标旋转效果
-function myFunction() {
+function iconRotate() {
   figure.style.animation = "rotate 1s 8";
   figure.style.animationFillMode= "forwards";
 }
-figure.addEventListener("animationend",myFunction);
+function iconRotate1() {
+  figure.style.animation = "";
+}
+figure.addEventListener("animationend",iconRotate1);
 
 
 // 图标出现效果
-function myEndFunction() {
-  setTimeout(function(){
-    liList[0].style.animation = "liList 2s 1";
-    liList[0].style.animationFillMode= "forwards";
-  },800)
-  setTimeout(function(){
-    liList[1].style.animation = "liList 2s 1";
-    liList[1].style.animationFillMode= "forwards";
-  },800)
-  setTimeout(function(){
-    liList[2].style.animation = "liList 2s 1";
-    liList[2].style.animationFillMode= "forwards";
-  },800)
-  setTimeout(function(){
-    liList[3].style.animation = "liList 2s 1";
-    liList[3].style.animationFillMode= "forwards";
-  },3000)
-  setTimeout(function(){
-    liList[4].style.animation = "liList 2s 1";
-    liList[4].style.animationFillMode= "forwards";
-  },3000)
-  setTimeout(function(){
-    liList[5].style.animation = "liList 2s 1";
-    liList[5].style.animationFillMode= "forwards";
-  },3000)
-  setTimeout(function(){
-    liList[6].style.animation = "liList 2s 1";
-    liList[6].style.animationFillMode= "forwards";
-  },5500)
-  setTimeout(function(){
-    liList[7].style.animation = "liList 2s 1";
-    liList[7].style.animationFillMode= "forwards";
-  },5500)
-  setTimeout(function(){
-    liList[8].style.animation = "liList 2s 1";
-    liList[8].style.animationFillMode= "forwards";
-  },5500)
-  setTimeout(function(){
-    liList[9].style.animation = "liList 2s 1";
-    liList[9].style.animationFillMode= "forwards";
-  },6500)
+function iconShow() {
+  var timesList = [600, 200, 200, 1500, 200, 200, 1800, 200, 200, 600];
+  var i = 0;
+  doIconShow(timesList, i);
+}
+
+function doIconShow(timesList, i) {
+  if(i<liList.length){
+    item = timesList.shift();
+    setTimeout(function(){
+      liList[i].style.animation = "liList 2s 1";
+      liList[i].style.animationFillMode= "forwards";
+      i++;
+      doIconShow(timesList, i);
+    }, item);
+  }
 }
 
 for(var i=0; i<liList.length; i++){
-  liList[i].addEventListener("animationend",myEndFunction);
+  liList[i].addEventListener("animationend",iconShow);
 }
 
 
 // 扫描线效果
-function mySvg() {
-  scanning[0].style.animation = "scanning  2s linear 3";
+function scanning() {
+  scanSvg[0].style.animation = "scanning 2s linear 3";
 }
-scanning[0].addEventListener("animationend",mySvg);
+scanSvg[0].addEventListener("animationend", scanning);
 
 // 打字效果
 var typing = icon.getElementsByTagName("p");
-setTimeout(function(){
-  typing[0].style.animation = "typing 3s steps(30,end)";
-  typing[0].style.opacity= "1";
-},2500)
-
 var typingEm = typing[0].getElementsByTagName("em")[0];
-
-setTimeout(function(){
-  typingEm.style.animation = "typingEm 3s";
-  typingEm.style.animationFillMode= "forwards";
-},4000)
