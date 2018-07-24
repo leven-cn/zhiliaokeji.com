@@ -131,8 +131,6 @@ setTimeout(function(){
 
 var typingEm = typing[0].getElementsByTagName("em")[0];
 
-console.log(typingEm)
-
 setTimeout(function(){
   typingEm.style.animation = "typingEm 3s";
   typingEm.style.animationFillMode= "forwards";
