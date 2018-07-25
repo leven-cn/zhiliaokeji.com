@@ -31,6 +31,6 @@ zhiliaokeji.com website
 ## Benchmark
 
 - WebLint: `100`
-- htmlhint: `100`
-- [csslint](htts://csslint.net/): `100`
+- [htmlhint](http://htmlhint.com/): `100`
+- [stylelint](https://stylelint.io): `100`
 - jshint: **No JavaScript!**
