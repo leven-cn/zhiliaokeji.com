@@ -39,7 +39,6 @@ exp.onclick = function(){
  * 情报站
  */
 var intelligenceGetBtn = document.getElementById("intelligence-get-btn");
-var wechat = document.getElementById("wechat");
 var qrcode = document.getElementById("qrcode");
 var tag = document.getElementById("tag");
 
@@ -70,6 +69,7 @@ function iconRotate1() {
 intelligenceIcon.addEventListener("animationend", iconRotate1);
 
 // 微信图标二维码显示
+var wechat = document.getElementById("wechat");
 wechat.onmousemove = function(){
   qrcode.style.width = "12rem";
   qrcode.style.opacity = "1";
