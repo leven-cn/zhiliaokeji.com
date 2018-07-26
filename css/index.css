@@ -37,7 +37,6 @@ main article h2{
 }
 
 main article section{
-  display: inline-block;
   box-shadow: 0 0 8px 0.12rem #f1f1f1;
   margin-top: 2rem;
   padding: 1rem;
@@ -45,9 +44,36 @@ main article section{
   display: none;
 }
 
-main article section:hover{
+main ul{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  overflow: hidden;
+  background: #666;
+  z-index: 3;
+  left:0;
+  /* top:0; */
+}
+
+main ul li{
+  float:left;
+  width: 8%;
+  height: 100%;
+  text-align: left;
+  background:#000;
   transition: all 1s;
-  background:rgb(67, 201, 233);
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+main ul li section{
+  height: 100%;
+  width: 250%;
+  padding:1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main section:nth-child(3){
@@ -56,7 +82,6 @@ main section:nth-child(3){
   bottom: 25%;
   text-align: center;
 }
-
 main section:nth-child(3) a{
   width: 10%;
   height: 3.5rem;
@@ -71,53 +96,24 @@ main section:nth-child(3) a{
   box-shadow: 0 0 8px 0.01rem #f1f1f1;
 }
 
+main article section:hover{
+  transition: all 1s;
+  background:rgb(67, 201, 233);
+}
 main section:nth-child(3) a:hover{
   transition: all 1s;
   background:rgb(66, 208, 243);
   font-size: 1.4rem;
 }
-
-main ul{
-  width: 100%;
-  height:100%;
-  position: fixed;
-  overflow: hidden;
-  background: #666;
-  z-index: 3;
-  left:0;
-  /* top:0; */
-}
-
-
-main ul li{
-  float:left;
-  width: 8%;
-  height: 100%;
-  text-align: left;
-  background:#000;
-  transition: all 1s;
-  box-sizing: border-box;
-  font-size: 1.3rem;
-  color: #fff;
-}
 main ul li:nth-child(3){width:68%;}
-
-main ul li section{height: 100%; width: 250%; padding:1rem 0 0 1rem;}
 main ul li:nth-child(1) section{background:rgb(85, 71, 142)}
 main ul li:nth-child(2) section{background:rgb(143, 195, 214)}
-main ul li:nth-child(3) section{background:rgb(240, 190, 74)}
+main ul li:nth-child(3) section{background:rgb(240, 190, 74); display: block;}
 main ul li:nth-child(4) section{background:rgb(165, 191, 75)}
 main ul li:nth-child(5) section{background:rgb(255, 111, 67)}
 
 main ul:hover li{width:8%;}
 main ul li:hover{width:68%;}
-
-
-main ul li section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 main ul li section p{
   position: static;
@@ -132,10 +128,6 @@ main ul li svg{
   width: 15rem;
   height: 15rem;
   line-height: 100%;
-}
-
-main ul li:nth-child(3) section{
-  display: block;
 }
 
 main ul li:nth-child(3) section section{
@@ -213,7 +205,7 @@ main ul li:nth-child(3) section section:nth-child(2) button:hover{
   box-shadow:3px 3px 4px rgb(165, 191, 75) inset;
 }
 
-#icon{
+#intelligence-phone{
   width: 16.54rem;
   height: 30.58rem;
   position: absolute;
@@ -223,11 +215,11 @@ main ul li:nth-child(3) section section:nth-child(2) button:hover{
   background: rgb(34, 34, 34);
 }
 
-#icon ol{
+#intelligence-phone ol{
   display: inline-block;
 } 
 
-#icon ol li{
+#intelligence-phone ol li{
   width: 4rem;
   height: 4rem;
   line-height: 4rem;
@@ -242,45 +234,45 @@ main ul li:nth-child(3) section section:nth-child(2) button:hover{
   /* cursor: ; */
 }
 
-#icon ol li:nth-child(1){
+#intelligence-phone ol li:nth-child(1){
   background: rgb(210,82,41);
 }
-#icon ol li:nth-child(2){
+#intelligence-phone ol li:nth-child(2){
   background: rgb(67,160,231);
 }
-#icon ol li:nth-child(3){
+#intelligence-phone ol li:nth-child(3){
   background: rgb(244,173,61);
 }
-#icon ol li:nth-child(4){
+#intelligence-phone ol li:nth-child(4){
   background: rgb(142,186,57);
   font-size: 0.9rem;
 }
-#icon ol li:nth-child(5){
+#intelligence-phone ol li:nth-child(5){
   background: rgb(42,105,186);
   font-size: 0.9rem;
 }
 
 
-#icon ol li:nth-child(6){
+#intelligence-phone ol li:nth-child(6){
   background: rgb(66,105,145);
   font-size: 0.9rem;
 }
-#icon ol li:nth-child(7){
+#intelligence-phone ol li:nth-child(7){
   background: rgb(21,45,33);
   font-size: 0.9rem;
 }
-#icon ol li:nth-child(8){
+#intelligence-phone ol li:nth-child(8){
   background: rgb(233,52,40);
 }
-#icon ol li:nth-child(9){
+#intelligence-phone ol li:nth-child(9){
   background: rgb(106,121,176);
 }
-#icon ol li:last-child{
+#intelligence-phone ol li:last-child{
   border:0.05rem solid #eee;
   background: none;
 }
 
-#icon svg{
+#intelligence-phone svg{
   height: 2rem;
   position: absolute;
   top:-1.2rem;
@@ -317,7 +309,7 @@ main li:hover p{
   margin: 1rem 0 0 4.5rem;
 }
 
-#icon p{
+#intelligence-phone p{
   color:rgba(255,255,255,1);
   margin: 1.3rem 0 1rem 1.3rem;
   font-size: 2rem;
@@ -328,7 +320,7 @@ main li:hover p{
   opacity: 0;
 }
 
-#icon p em{
+#intelligence-phone p em{
   font-style: normal;
 }
 

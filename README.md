@@ -12,7 +12,7 @@ zhiliaokeji.com website
 
 - 主页
 - 服务
-- 情报站
+- 技术情报站
 - 关于我们
 - 联系我们
 - 搜索
@@ -22,11 +22,6 @@ zhiliaokeji.com website
 - Safari 11+
 - Chrome 66+
 - Firefox 60+
-
-## Resolutuon（分辨率）
-
-- 1440 x 900
-- 2500 x 600
 
 ## Benchmark
 
