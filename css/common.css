@@ -16,17 +16,6 @@ body{
 
 header{position:fixed;width: 100%;z-index: 4;top:0;}
 
-header a:nth-child(2){
-  position: relative;
-  background:#fff;
-  border-radius: 0 0 0.8rem 0.8rem;
-  padding: 0.7rem 1rem;
-  display: inline-block;
-  margin-left:2rem;
-  box-shadow: 2px 1px 8px 1px #f1f1f1;
-  top:0;
-}
-
 header img{
   width: 2rem;
 }
@@ -96,6 +85,17 @@ nav ul li a{
   color: #fff;
 }
 
+header a:nth-child(2){
+  position: relative;
+  background:#fff;
+  border-radius: 0 0 0.8rem 0.8rem;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  margin-left:2rem;
+  box-shadow: 2px 1px 8px 1px #f1f1f1;
+  top:0;
+}
+
 nav ul li:nth-child(1):hover{background:rgb(177, 95, 95);}
 nav ul li:nth-child(2):hover{background:rgb(250, 71, 81);}
 nav ul li:nth-child(3):hover{background:rgb(21, 102, 247);}
@@ -155,14 +155,3 @@ footer section{
   transition:all 1s;
 }
 footer section p{position: absolute;bottom:2.8rem;right: -1rem;width: 11.5rem;opacity: 0;}
-
-
-
-
-
-
-
-
-
-
-
