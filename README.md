@@ -26,8 +26,8 @@ zhiliaokeji.com website
 ## To Contributors（致贡献者）
 
 1. Install `NodeJS`
-2. Install `htmlhint` and `stylelint` by `sudo npm install -g htmllint stylelint stylelint-config-recommended`
-3. Run `./run_tests.sh` for code static analysis before git commit
+1. Install `htmlhint` and `stylelint` by `sudo npm install -g htmllint stylelint stylelint-config-recommended`
+1. Run `./run_tests.sh` for code static analysis before git commit
 
 ### Reference (参考)
 
