@@ -23,9 +23,18 @@ zhiliaokeji.com website
 - Chrome 66+
 - Firefox 60+
 
-## Benchmark
+## To Contributors（致贡献者）
 
-- WebLint: `100`
-- [htmlhint](http://htmlhint.com/): `100`
-- [stylelint](https://stylelint.io): `100`
-- jshint: **No JavaScript!**
+1. Install `NodeJS`
+2. Install `htmlhint` and `stylelint` by `sudo npm install -g htmllint stylelint stylelint-config-recommended`
+3. Run `./run_tests.sh` for code static analysis before git commit
+
+### Reference (参考)
+
+- [htmlhint](http://htmlhint.com/)
+- [stylelint](https://stylelint.io)
+
+#### Others
+
+- WebLint
+- JSHint/ESLint
