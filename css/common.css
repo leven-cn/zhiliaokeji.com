@@ -154,4 +154,4 @@ footer section{
   border-radius: 0.2rem;
   transition:all 1s;
 }
-footer section p{position: absolute;bottom:2.8rem;right: -1rem;width: 11.5rem;opacity: 0;}
+footer section p{position: absolute;bottom:2.8rem;right: -1rem;width: 11.5rem;opacity: 0;transition: all 1s;}

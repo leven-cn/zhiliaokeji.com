@@ -68,19 +68,6 @@ function iconRotate1() {
 }
 intelligenceIcon.addEventListener("animationend", iconRotate1);
 
-// 微信图标二维码显示
-var wechat = document.getElementById("wechat");
-wechat.onmousemove = function(){
-  qrcode.style.width = "12rem";
-  qrcode.style.opacity = "1";
-  tag.style.opacity = "1";
-}
-wechat.onmouseout = function(){
-  qrcode.style.width = "0";
-  qrcode.style.opacity = "0";
-  tag.style.opacity = "0";
-}
-
 // 图标出现效果
 var ol = intelligencePhone.getElementsByTagName("ol")[0];
 var liList = ol.getElementsByTagName("li");
