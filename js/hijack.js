@@ -29,9 +29,9 @@ if(isHacked()){
     //如果不这样，万一每次都被劫持的话，那么直接页面无限刷了，直接被自己并发攻击了。。。
     setTimeout(function(){
         alert("湖南电信专属劫持IP(124.232.160.178)劫持你的网络，请打电话投诉！" +
-        "\n中华人民共和国工业和信息化部电信用户申诉受理中心网址：" +
-        "\nhttp://www.chinatcc.gov.cn:8080/cms/shensus/" +
-        "\n工信部申诉电话：010-12300");
+        "\n\n\n中华人民共和国工业和信息化部电信用户申诉受理中心网址：" +
+        "\n\nhttp://www.chinatcc.gov.cn:8080/cms/shensus/" +
+        "\n\n\n工信部申诉电话：010-12300");
         console.log("湖南电信专属劫持IP(124.232.160.178)劫持你的网络，请打电话投诉！");
         console.log("最后补充一句: 期待运营商优化劫持的js代码，减少劫持的频率。求放过");
         window.location.href = window.location.href;
