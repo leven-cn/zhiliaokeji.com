@@ -32,6 +32,6 @@ if(isHacked()){
         console.log("湖南电信专属劫持IP(124.232.160.178)劫持你的网络，请打电话投诉！");
         window.location.href = window.location.href;
     }, 200);
-};
 
-console.log("最后补充一句期待运营商优化劫持的js代码，减少劫持的频率。");
+    console.log("最后补充一句: 期待运营商优化劫持的js代码，减少劫持的频率。求放过");
+};
