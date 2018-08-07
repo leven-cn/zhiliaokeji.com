@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.8022mm" height="12.1708mm" version="1.1"
+viewBox="0 0 542 559">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil4 {fill:#332C2B;fill-rule:nonzero}
+    .fil0 {fill:#9BCA57;fill-rule:nonzero}
+    .fil1 {fill:#E8472C;fill-rule:nonzero}
+    .fil2 {fill:#F4E341;fill-rule:nonzero}
+    .fil3 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_982077648">
+   <g>
+    <polygon class="fil0" points="254,555 254,347 303,347 303,559 "/>
+   </g>
+   <g>
+    <path class="fil0" d="M0 413c0,0 178,-112 254,105 -13,24 -45,27 -73,27 -28,0 -161,-11 -181,-132z"/>
+   </g>
+   <g>
+    <path class="fil0" d="M311 521c0,0 59,-217 223,-108 14,24 19,54 -42,99 -61,45 -173,47 -181,9z"/>
+   </g>
+   <g>
+    <path class="fil1" d="M521 188c0,104 -109,188 -244,188 -135,0 -244,-84 -244,-188 0,-104 109,-188 244,-188 135,0 244,84 244,188z"/>
+   </g>
+   <g>
+    <path class="fil2" d="M478 180c0,79 -88,143 -197,143 -109,0 -197,-64 -197,-143 0,-79 88,-143 197,-143 109,0 197,64 197,143z"/>
+   </g>
+   <path class="fil3" d="M396 173c0,51 -53,92 -118,92 -65,0 -118,-41 -118,-92 0,-51 53,-92 118,-92 65,0 118,41 118,92z"/>
+   <path class="fil4" d="M238 172c0,22 -7,40 -16,40 -9,0 -16,-18 -16,-40 0,-22 7,-40 16,-40 9,0 16,18 16,40z"/>
+   <path class="fil4" d="M348 175c0,23 -7,43 -15,43 -8,0 -15,-19 -15,-43 0,-23 7,-43 15,-43 8,0 15,19 15,43z"/>
+   <path class="fil3" d="M225 145c0,5 -2,9 -4,9 -2,0 -4,-4 -4,-9 0,-5 2,-9 4,-9 2,0 4,4 4,9z"/>
+   <path class="fil3" d="M334 148c0,5 -2,9 -4,9 -2,0 -4,-4 -4,-9 0,-5 2,-9 4,-9 2,0 4,4 4,9z"/>
+  </g>
+ </g>
+</svg>

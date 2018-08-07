@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16.9mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1082 1145"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#332C2B;stroke-width:12.5619}
+    .fil1 {fill:url(#id0);fill-rule:nonzero}
+    .fil0 {fill:url(#id1);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="6.27739" y1="142.881" x2="1075.54" y2="142.881">
+   <stop offset="0" style="stop-color:#52B33E"/>
+   <stop offset="0.0313725" style="stop-color:#52B33E"/>
+   <stop offset="0.278431" style="stop-color:#8EC77A"/>
+   <stop offset="0.619608" style="stop-color:#519340"/>
+   <stop offset="1" style="stop-color:#3A7F2F"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="98.9179" y1="682.224" x2="997.037" y2="682.224">
+  </linearGradient>
+ </defs>
+ <g id="图层_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="99,1138 99,226 997,226 994,1138 "/>
+  <path class="fil1 str0" d="M6 239c0,0 0,41 31,41 8,0 1017,0 1017,0 0,0 20,-8 20,-24 0,-16 0,-221 0,-221 0,0 -2,-28 -22,-28 -20,0 -986,0 -986,0 0,0 -52,3 -52,22 0,19 -9,210 -9,210z"/>
+ </g>
+</svg>
