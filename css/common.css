@@ -96,7 +96,7 @@ header a:nth-child(2){
   top:0;
 }
 
-nav ul li:nth-child(1):hover{background:#F4696B;}
+nav ul li:nth-child(1):hover{background:#ccc5e3;}
 nav ul li:nth-child(2):hover{background:rgb(250, 71, 81);}
 nav ul li:nth-child(3):hover{background:rgb(21, 102, 247);}
 nav ul li:nth-child(4):hover{background:rgb(67, 201, 233);}
