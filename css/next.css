@@ -22,19 +22,6 @@ article img {
   margin-bottom: 80px;
 }
 
-article p:not(:first-child) {
-  animation: zoomIn 2s;
-  -moz-animation: zoomIn 2s;
-  -webkit-animation: zoomIn 2s;
-  -o-animation: zoomIn 2s;
-}
-
-article p:last-child {
-  margin-top: 10px;
-  font-size: 28px;
-  background: url(../img/icon.png) no-repeat center;
-}
-
 article svg {
   fill: #fff;
   margin-bottom: 25px;
@@ -62,6 +49,19 @@ header {position: absolute; top: 30px; left: 30px; color: #fff;font-size:22px;}
 header img {width: 20px; height: 30px; vertical-align: middle; margin-right: 15px;}
 header p {display: inline;}
 
+article p:not(:first-child) {
+  animation: zoomIn 2s;
+  -moz-animation: zoomIn 2s;
+  -webkit-animation: zoomIn 2s;
+  -o-animation: zoomIn 2s;
+}
+
+article p:last-child {
+  margin-top: 10px;
+  font-size: 28px;
+  background: url(../img/icon.png) no-repeat center;
+}
+
 footer {
   font-size: 16px;
   color: #999;
@@ -86,3 +86,7 @@ footer {
   -ms-transform: translate(0, 45px);
   transform: translate(0, 45px);
 }
+
+.str0 {stroke:white;stroke-width:16.985}
+.fil1 {fill:none}
+.fil0 {fill:none;fill-rule:nonzero}

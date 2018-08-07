@@ -2,12 +2,11 @@
 /* CSS Reset */
 
 html {
-    font-family: "微软雅黑";
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
-  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #333;
 }
@@ -43,6 +42,7 @@ template {
 }
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -104,7 +104,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 button,
@@ -134,13 +134,21 @@ button[disabled],
 html input[disabled] {
   cursor: default;
 }
+input {
+  line-height: normal;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
-}
-input {
-  line-height: normal;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -188,19 +196,6 @@ th {
   padding: 0;
 }
 
-
-
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-a {
-  text-decoration: none;
-}
 a:hover,
 a:focus {
   text-decoration: none;
