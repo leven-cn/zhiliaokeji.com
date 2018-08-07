@@ -11,7 +11,7 @@ button,input{
 
 body{
   font-size: 1.5rem;
-  font-family: 'Lucida Console', Monaco, monospace;
+  font-family: 'Lucida Console', "微软雅黑", monospace;
 }
 
 header{position:fixed;width: 100%;z-index: 4;top:0;}
@@ -96,7 +96,7 @@ header a:nth-child(2){
   top:0;
 }
 
-nav ul li:nth-child(1):hover{background:rgb(177, 95, 95);}
+nav ul li:nth-child(1):hover{background:#F4696B;}
 nav ul li:nth-child(2):hover{background:rgb(250, 71, 81);}
 nav ul li:nth-child(3):hover{background:rgb(21, 102, 247);}
 nav ul li:nth-child(4):hover{background:rgb(67, 201, 233);}
@@ -109,7 +109,7 @@ aside:hover nav{display: block;}
 footer{
   text-align: center;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 1rem;
   position: fixed;
   bottom: 2rem;
   z-index:3;
@@ -155,3 +155,31 @@ footer section{
   transition:all 1s;
 }
 footer section p{position: absolute;bottom:2.8rem;right: -1rem;width: 11.5rem;opacity: 0;transition: all 1s;}
+
+
+@keyframes scratchy {
+  0% {
+    background-position: 0 0;
+  }
+  26% {
+    background-position: 20px -20px;
+  }
+  50% {
+    background-position: 20px -20px;
+  }
+  51% {
+    background-position: 40px -40px;
+  }
+  75% {
+    background-position: 40px -40px;
+  }
+  76% {
+    background-position: 60px -60px;
+  }
+  99% {
+    background-position: 60px -60px;
+  }
+  100% {
+    background-position: 0 0;
+  } 
+}
