@@ -4,7 +4,6 @@ function typing(){
   var heTyping = document.getElementsByTagName("h1")[0];
   if (i <= str.length) {
     heTyping.innerHTML = str.slice(0, i++) + '_';
-    console.log(i);
     setTimeout('typing()', 200);
   }
   else{
@@ -37,5 +36,5 @@ try {
   }
 }
 catch (e) {
-//  $("#arrow").html(e.message)
+  arrow.innerHTML = "请在微信端打开页面";
 }

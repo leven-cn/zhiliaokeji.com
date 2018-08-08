@@ -32,13 +32,17 @@ down.onclick = function(){
   aboutBtn.className = listCLass[index];
   aboutListLi[index].style.opacity = "1";
 
+  if(index == 0){
+    loopTyping(figcaptionTyping, figcaptionList);
+  }
+
   if(index == 1){
     doIndexPath();
     doIndexComputer();
   }
   if(index == 2){
     typingIndex();
-    setTimeout("iconShow()",2000)
+    setTimeout("iconShow()",2000);
   }
 }
 
@@ -62,6 +66,10 @@ up.onclick = function() {
   }
   aboutBtn.className = listCLass[index];
   aboutListLi[index].style.opacity = "1";
+
+  if(index == 0){
+    loopTyping(figcaptionTyping, figcaptionList);
+  }
 
   if(index == 1){
     doIndexPath();
