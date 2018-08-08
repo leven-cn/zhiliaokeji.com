@@ -170,7 +170,7 @@ main ul li:nth-child(1) figure p{
   }
 }
 
- main ul li:nth-child(1) section{
+main ul li:nth-child(1) section{
   display: inline-block;
   width: 16.6rem;
   height: 19rem;
@@ -269,8 +269,36 @@ main ul li:nth-child(2) figure section img{
   transition: 0.14s;
 }
 
+#intelligence-box button{
+  position: absolute;
+  right: 1rem;
+  width: 9.5rem;
+  height: 3.8rem;
+  background: #fff;
+  color: #F6D860;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#intelligence-box button:hover{
+  box-shadow: 0 0 1rem 0.4rem rgb(218, 191, 85);
+  transform: scale(1.02);
+}
+
+#intelligence-box button:nth-child(3){
+  top:8rem;
+}
+
+#intelligence-box button:nth-child(4){
+  top:15rem;
+}
+
 #about-btn button:hover{
-  transform: scale(1.02)
+  transform: scale(1.02);
 }
 
 #about-btn button::after{
@@ -468,16 +496,16 @@ main ul li:nth-child(2) figure section img{
   right:0;
 }
 
-#qingbaoz{
+#intelligence-box{
   position: relative;
   overflow: hidden;
   margin: -4rem 0 1rem;
 }
 
-#qingbaoz svg:nth-child(1){
+#intelligence-box svg:nth-child(1){
   fill: #fff;
   width: 27rem;
-  margin-left: 13rem;
+  margin-left: 2rem;
 }
 
 #intelligence-phone{
@@ -486,7 +514,7 @@ main ul li:nth-child(2) figure section img{
   overflow: hidden;
   position: absolute;
   top:3rem;
-  left: 14.9rem;
+  left: 3.9rem;
   background: rgb(34, 34, 34);
 }
 

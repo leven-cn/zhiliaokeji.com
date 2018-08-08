@@ -118,7 +118,7 @@ async function typingIndex(){
   typing.style.animation = "";
   typing.style.opacity= "0";
   await sleep(500);
-  typing.style.animation = "typing 3s steps(30,end)";
+  typing.style.animation = "typing 2s steps(20,end)";
   typing.style.opacity= "1";
 }
 
@@ -127,10 +127,21 @@ var listIcon = document.getElementById("list-icon");
 var listIconEm = listIcon.getElementsByTagName("em");
 async function iconShow(){
   for(var i=0; i<listIconEm.length;i++){
+    listIconEm[i].style.removeProperty("opacity");
     listIconEm[i].style.opacity = "0";
     listIconEm[i].style.animation = "";
-    await sleep(500);
-    listIconEm[i].style.animation = "emList 2s 1";
+    await sleep(200);
+    listIconEm[i].style.animation = "emList 1s 1";
     listIconEm[i].style.opacity = "1";
   }
+}
+
+// 手机端入口 PC端入口
+var intelligenceBox = document.getElementById("intelligence-box");
+var intelligenceBtn = intelligenceBox.getElementsByTagName("button");
+
+intelligenceBtn[0].onclick = function(){
+  qrcode.style.width = "12rem";
+  qrcode.style.opacity = "1";
+  tag.style.opacity = "1";
 }
