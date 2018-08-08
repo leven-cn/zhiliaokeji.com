@@ -1,9 +1,10 @@
 var str = '做一个有追求的开发者';
 var i = 0;
 function typing(){
-  var heTyping = he = document.getElementsByTagName("h1")[0];
+  var heTyping = document.getElementsByTagName("h1")[0];
   if (i <= str.length) {
     heTyping.innerHTML = str.slice(0, i++) + '_';
+    console.log(i);
     setTimeout('typing()', 200);
   }
   else{

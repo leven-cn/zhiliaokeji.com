@@ -8,7 +8,6 @@ ul.style.top = window.innerHeight;
 // 默认切换到情报站
 var intelligencePhone = document.getElementById("intelligence-phone");
 var typing = intelligencePhone.getElementsByTagName("p");
-var typingEm = typing[0].getElementsByTagName("em")[0];
 exp.onclick = function(){
  times = setInterval(function(){
     var speed = parseInt(getComputedStyle(ul).top) - 10;
@@ -26,11 +25,7 @@ exp.onclick = function(){
       typing[0].style.animation = "typing 3s steps(30,end)";
       typing[0].style.opacity= "1";
     },1000);
-    // 强调“正”字
-    setTimeout(function(){
-      typingEm.style.animation = "typingEm 3s";
-      typingEm.style.animationFillMode= "forwards";
-    },2500);
+    
   },8);
 };
 
@@ -87,13 +82,9 @@ function doIconShow(timesList, i) {
     }, item);
   }
 }
-for(var i=0; i<liList.length; i++){
-  liList[i].addEventListener("animationend", iconShow);
-}
 
 // 扫描线效果
 var scanSvg = intelligencePhone.getElementsByTagName("svg");
 function scanning() {
   scanSvg[0].style.animation = "scanning 2s linear 3";
 }
-scanSvg[0].addEventListener("animationend", scanning);

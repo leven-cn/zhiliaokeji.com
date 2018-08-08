@@ -52,6 +52,7 @@ main ul li figure figcaption{
   -webkit-text-fill-color:transparent;
   animation: scratchy 0.253s linear forwards infinite;
   font-size: 3rem;
+  height: 3.5rem;
 }
 
 main ul li:nth-child(1) figure{
@@ -169,56 +170,11 @@ main ul li:nth-child(1) figure p{
   }
 }
 
-main ul li:nth-child(1) section{
+ main ul li:nth-child(1) section{
   display: inline-block;
-  font-size:1.5rem;
+  width: 16.6rem;
+  height: 19rem;
   position: relative;
-  width: 40rem;
-  height: 2rem;
-}
-
-main ul li:nth-child(1) section p{
-  position: absolute;
-  top:-2rem;
-  width: 100%;
-  text-align: center;
-}
-
-main ul li:nth-child(1) section p:nth-child(1){
-  opacity: 0;
-  animation: showText 1.2s infinite;
-  animation-direction: alternate;
-}
-main ul li:nth-child(1) section p:nth-child(2){
-  opacity: 0;
-  animation: showText1 1.2s 1s infinite;
-  animation-direction: alternate;
-}
-
-@keyframes showText{
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    display: block;
-  }
-}
-
-@keyframes showText1{
-  0%{
-    opacity: 0;
-  }
-  70%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-    display: block;
-  }
 }
 
 
@@ -257,9 +213,10 @@ main ul li:nth-child(2) figure section img{
 
 
 #intelligence-icon{
-  width: 21rem;
-  height: 21rem;
+  width: 3rem;
+  height: 3rem;
   animation: rotate 1.5s infinite;
+  vertical-align: top;
 }
 
 @keyframes rotate{
@@ -350,6 +307,23 @@ main ul li:nth-child(2) figure section img{
 
 #about-btn button:hover::after{
   transform: scale(0.94);
+}
+
+#intelligence-phone section em{
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  color:#fff;
+  font-size: 0.8rem;
+  font-weight: normal;
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: all 1s;
+  position: static;
+  float: left;
+  margin:0.5rem 0 0 0.5rem;
+  font-style: normal;
 }
 
 #up em::after{
@@ -494,4 +468,91 @@ main ul li:nth-child(2) figure section img{
   right:0;
 }
 
+#qingbaoz{
+  position: relative;
+  overflow: hidden;
+  margin: -4rem 0 1rem;
+}
 
+#qingbaoz svg:nth-child(1){
+  fill: #fff;
+  width: 27rem;
+  margin-left: 13rem;
+}
+
+#intelligence-phone{
+  width: 10.88rem;
+  height: 20.1rem;
+  overflow: hidden;
+  position: absolute;
+  top:3rem;
+  left: 14.9rem;
+  background: rgb(34, 34, 34);
+}
+
+#intelligence-phone section{
+  display: inline-block;
+} 
+
+#intelligence-phone section em:nth-child(1){
+  background: rgb(210,82,41);
+}
+#intelligence-phone section em:nth-child(2){
+  background: rgb(67,160,231);
+}
+#intelligence-phone section em:nth-child(3){
+  background: rgb(244,173,61);
+}
+#intelligence-phone section em:nth-child(4){
+  background: rgb(66,105,145);
+  font-size: 0.7rem;
+}
+#intelligence-phone section em:nth-child(5){
+  background: rgb(42,105,186);
+  font-size: 0.7rem;
+}
+#intelligence-phone section em:nth-child(6){
+  background: rgb(142,186,57);
+  font-size: 0.7rem;
+}
+#intelligence-phone section em:nth-child(7){
+  background: rgb(32, 77, 54);
+  font-size: 0.7rem;
+}
+#intelligence-phone section em:nth-child(8){
+  background: rgb(233,52,40);
+}
+#intelligence-phone section em:nth-child(9){
+  background: rgb(106,121,176);
+}
+#intelligence-phone section em:last-child{
+  border:0.05rem solid #eee;
+  background: none;
+}
+
+@keyframes emList{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#intelligence-phone p{
+  color:rgba(255,255,255,1);
+  margin: 1rem 0 0.4rem 1.2rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  border-right:.1em solid;
+	width:6em;
+	white-space:nowrap;
+  overflow:hidden;
+  opacity: 0;
+}
+
+@keyframes typing {
+	from {
+    width:0;
+  }
+}

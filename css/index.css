@@ -253,7 +253,7 @@ main ul li:nth-child(3) section section:nth-child(2) button:hover{
   background: rgb(244,173,61);
 }
 #intelligence-phone ol li:nth-child(4){
-  background: rgb(142,186,57);
+  background: rgb(66,105,145);
   font-size: 0.9rem;
 }
 #intelligence-phone ol li:nth-child(5){
@@ -261,9 +261,8 @@ main ul li:nth-child(3) section section:nth-child(2) button:hover{
   font-size: 0.9rem;
 }
 
-
 #intelligence-phone ol li:nth-child(6){
-  background: rgb(66,105,145);
+  background: rgb(142,186,57);
   font-size: 0.9rem;
 }
 #intelligence-phone ol li:nth-child(7){
@@ -320,7 +319,7 @@ main li:hover p{
 
 #intelligence-phone p{
   color:rgba(255,255,255,1);
-  margin: 1.3rem 0 1rem 1.3rem;
+  margin: 1.3rem 0 1rem 2.4rem;
   font-size: 2rem;
   border-right:.1em solid;
 	width:16.5em;

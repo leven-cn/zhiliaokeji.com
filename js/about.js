@@ -4,7 +4,13 @@ var aboutList = document.getElementById("about_list");
 var aboutListLi = aboutList.getElementsByTagName("li");
 
 var index = 0;
-aboutListLi[index].style.opacity = "1";
+aboutListLi[0].style.opacity = "1";
+
+var figcaptionTyping = aboutListLi[0].getElementsByTagName("figcaption")[0];
+var figcaptionList = ["Since 2014","情报站 2018"];
+
+loopTyping(figcaptionTyping, figcaptionList);
+
 
 var aboutBtn = document.getElementById("about-btn");
 
@@ -29,6 +35,10 @@ down.onclick = function(){
   if(index == 1){
     doIndexPath();
     doIndexComputer();
+  }
+  if(index == 2){
+    typingIndex();
+    setTimeout("iconShow()",2000)
   }
 }
 
@@ -56,6 +66,10 @@ up.onclick = function() {
   if(index == 1){
     doIndexPath();
     doIndexComputer();
+  }
+  if(index == 2){
+    typingIndex();
+    setTimeout("iconShow()",2000)
   }
 }
 
@@ -98,4 +112,25 @@ async function doIndexComputer(){
     macComputer.style.setProperty("animation","dash1 4s 1");
 }
 
+// 情报站手机打字效果
+var typing = document.getElementById("typing");
+async function typingIndex(){
+  typing.style.animation = "";
+  typing.style.opacity= "0";
+  await sleep(500);
+  typing.style.animation = "typing 3s steps(30,end)";
+  typing.style.opacity= "1";
+}
 
+// 图标出现效果
+var listIcon = document.getElementById("list-icon");
+var listIconEm = listIcon.getElementsByTagName("em");
+async function iconShow(){
+  for(var i=0; i<listIconEm.length;i++){
+    listIconEm[i].style.opacity = "0";
+    listIconEm[i].style.animation = "";
+    await sleep(500);
+    listIconEm[i].style.animation = "emList 2s 1";
+    listIconEm[i].style.opacity = "1";
+  }
+}
