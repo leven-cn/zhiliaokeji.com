@@ -19,10 +19,10 @@ try {
   function orientationHandler(event) {
     var arrow = document.getElementsByTagName("main")[0];
     arrow.style.opacity = "1";
-    if(Math.round(event.gamma) > 10){ // 扭转设备
+    if(Math.round(event.gamma) > 30){ // 扭转设备
       arrow.style.background= "#F6D860";
       arrow.innerHTML = "<p>领先一步步步领先</p>"
-    }else if(Math.round(event.gamma) < -20){ // 扭转设备
+    }else if(Math.round(event.gamma) < -30){ // 扭转设备
       arrow.style.background= "#64d6e2";
       arrow.innerHTML = "<p>善待知识，就是善待自己</p>"
     }else if(Math.round(event.beta) > 40){ // 前后旋转
