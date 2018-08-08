@@ -32,10 +32,6 @@ down.onclick = function(){
   aboutBtn.className = listCLass[index];
   aboutListLi[index].style.opacity = "1";
 
-  if(index == 0){
-    loopTyping(figcaptionTyping, figcaptionList);
-  }
-
   if(index == 1){
     doIndexPath();
     doIndexComputer();
@@ -66,10 +62,6 @@ up.onclick = function() {
   }
   aboutBtn.className = listCLass[index];
   aboutListLi[index].style.opacity = "1";
-
-  if(index == 0){
-    loopTyping(figcaptionTyping, figcaptionList);
-  }
 
   if(index == 1){
     doIndexPath();

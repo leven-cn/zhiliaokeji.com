@@ -1,40 +1,40 @@
 /**
- * 
+ * 打印多段文字
  */
 
-var index = 0;
-var listIndex = 0;
-var nextFlag = false;
-var container = null;
-var typingList = null;
-var intervalId = null;
-function loopTyping(_container, _typingList){
-  container = _container;
-  typingList = _typingList;
-  intervalId = setInterval(function(){
+var _index = 0;
+var _listIndex = 0;
+var _nextFlag = false;
+var _container = null;
+var _typingList = null;
+var _intervalId = null;
+function loopTyping(_c, _t){
+  _container = _c;
+  _typingList = _t;
+  _intervalId = setInterval(function(){
     _typing();
   }, 200);
 }
 
 function _typing(){
-  if(nextFlag){
+  if(_nextFlag){
     return;
   }
-  if(listIndex >= typingList.length){
-    clearInterval(intervalId);
+  if(_listIndex >= _typingList.length){
+    clearInterval(_intervalId);
     return;
   }
 
-  var text = typingList[listIndex];
-  if(index < text.length){
-      container.innerHTML = text.slice(0, ++index) + '_';
+  var text = _typingList[_listIndex];
+  if(_index < text.length){
+      _container.innerHTML = text.slice(0, ++_index) + '_';
   }else{
-    container.innerHTML = text.slice(0, index);
-    nextFlag = true;
-    index = 0;
-    listIndex++;
+    _container.innerHTML = text.slice(0, _index);
+    _nextFlag = true;
+    _index = 0;
+    _listIndex++;
     setTimeout(function(){
-      nextFlag = false;
+      _nextFlag = false;
       _typing();
     }, 1200);
   }
