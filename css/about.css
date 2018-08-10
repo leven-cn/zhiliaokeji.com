@@ -32,6 +32,11 @@ main ul li:nth-child(3){
   background: #F6D860;
 }
 
+main ul li:nth-child(3) p{
+  font-size:0.9rem;
+  font-style: normal;
+}
+
 main ul li:nth-child(4){
   background: #F68F6F;
 }
@@ -350,7 +355,7 @@ main ul li:nth-child(2) figure section img{
   transition: all 1s;
   position: static;
   float: left;
-  margin:0.5rem 0 0 0.5rem;
+  margin:0.8rem 0 0 0.5rem;
   font-style: normal;
 }
 
@@ -553,6 +558,15 @@ main ul li:nth-child(2) figure section img{
 #intelligence-phone section em:nth-child(9){
   background: rgb(106,121,176);
 }
+#intelligence-phone section em:nth-child(10){
+  background: rgb(23,68,127);
+}
+#intelligence-phone section em:nth-child(11){
+  background: rgb(82,148,87);
+}
+#intelligence-phone section em:nth-child(12){
+  background: rgb(132,213,226);
+}
 #intelligence-phone section em:last-child{
   border:0.05rem solid #eee;
   background: none;
@@ -577,10 +591,4 @@ main ul li:nth-child(2) figure section img{
 	white-space:nowrap;
   overflow:hidden;
   opacity: 0;
-}
-
-@keyframes typing {
-	from {
-    width:0;
-  }
 }

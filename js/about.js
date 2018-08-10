@@ -37,8 +37,7 @@ down.onclick = function(){
     doIndexComputer();
   }
   if(index == 2){
-    typingIndex();
-    setTimeout("iconShow()",2000);
+    iconShow();
   }
 }
 
@@ -68,8 +67,7 @@ up.onclick = function() {
     doIndexComputer();
   }
   if(index == 2){
-    typingIndex();
-    setTimeout("iconShow()",2000)
+    iconShow();
   }
 }
 
@@ -110,16 +108,6 @@ async function doIndexComputer(){
     macComputer.style.removeProperty("animation");
     await sleep(500);
     macComputer.style.setProperty("animation","dash1 4s 1");
-}
-
-// 情报站手机打字效果
-var typing = document.getElementById("typing");
-async function typingIndex(){
-  typing.style.animation = "";
-  typing.style.opacity= "0";
-  await sleep(500);
-  typing.style.animation = "typing 2s steps(20,end)";
-  typing.style.opacity= "1";
 }
 
 // 图标出现效果

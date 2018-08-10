@@ -317,9 +317,14 @@ main li:hover p{
   margin: 1rem 0 0 4.5rem;
 }
 
+main li:nth-child(3) h2 p{
+  margin: 0 0 0 1.1rem;
+  font-size:1.2rem;
+}
+
 #intelligence-phone p{
   color:rgba(255,255,255,1);
-  margin: 1.3rem 0 1rem 2.4rem;
+  margin: 1.3rem 0 1rem 1.2rem;
   font-size: 2rem;
   border-right:.1em solid;
 	width:16.5em;
